@@ -1,0 +1,11 @@
+.game{
+    display: flex;
+}
+
+button{
+    height: 30px;
+    align-self: center;
+}
+.hide{
+    display: none;
+}
