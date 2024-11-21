@@ -7,8 +7,17 @@ const lampadinaOn = document.querySelector("img.hide");
 const bottone = document.querySelector(".game button:last-child")
 /*console.log(bottone);*/
 
+let lampadinaAccesa= false
+
 bottone.addEventListener('click', () =>{
     lampadinaOff.classList.toggle('hide');
     lampadinaOn.classList.toggle('hide');
-    bottone.innerHTML 
+    lampadinaAccesa = !lampadinaAccesa
+    if(lampadinaAccesa){
+        bottone.textContent = "Turn Off The Light"
+    }else{
+        bottone.textContent = "Turn On The Light"
+
+    }
+    
 })
